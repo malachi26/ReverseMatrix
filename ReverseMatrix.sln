@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseMatrix", "Reverse3by3Matrix\ReverseMatrix.csproj", "{0BEF0F76-7891-4040-BDAC-A204332F8574}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixTools", "MatrixTools\MatrixTools.csproj", "{86BE714D-6C56-4251-AAD3-2980D8C011AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0BEF0F76-7891-4040-BDAC-A204332F8574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BEF0F76-7891-4040-BDAC-A204332F8574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BEF0F76-7891-4040-BDAC-A204332F8574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BE714D-6C56-4251-AAD3-2980D8C011AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BE714D-6C56-4251-AAD3-2980D8C011AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BE714D-6C56-4251-AAD3-2980D8C011AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BE714D-6C56-4251-AAD3-2980D8C011AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

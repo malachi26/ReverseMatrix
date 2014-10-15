@@ -1,0 +1,6 @@
+c:\work\visual studio 2013\Projects\Reverse3by3Matrix\Reverse3by3Matrix\bin\Debug\Reverse3by3Matrix.exe.config
+c:\work\visual studio 2013\Projects\Reverse3by3Matrix\Reverse3by3Matrix\bin\Debug\Reverse3by3Matrix.exe
+c:\work\visual studio 2013\Projects\Reverse3by3Matrix\Reverse3by3Matrix\bin\Debug\Reverse3by3Matrix.pdb
+c:\work\visual studio 2013\Projects\Reverse3by3Matrix\Reverse3by3Matrix\obj\Debug\ReverseMatrix.csprojResolveAssemblyReference.cache
+c:\work\visual studio 2013\Projects\Reverse3by3Matrix\Reverse3by3Matrix\obj\Debug\Reverse3by3Matrix.exe
+c:\work\visual studio 2013\Projects\Reverse3by3Matrix\Reverse3by3Matrix\obj\Debug\Reverse3by3Matrix.pdb

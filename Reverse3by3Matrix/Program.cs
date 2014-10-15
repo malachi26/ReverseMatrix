@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Reverse3by3Matrix
+namespace ReverseMatrix
 {
     class Program
     {
@@ -16,10 +16,10 @@ namespace Reverse3by3Matrix
                 {4, 5, 6},
                 {7, 8, 9}
             };
-            ReverseMatrix_bad(matrix);
-            PrintMatrix(matrix);
             
-            //PrintMatrix(ReverseMatrix(matrix));
+            PrintMatrix(matrix);
+            Console.ReadLine();
+            PrintMatrix(ReverseMatrix(matrix));
             Console.ReadLine();
 
             var matrix2 = new[,]
@@ -29,26 +29,29 @@ namespace Reverse3by3Matrix
                 {9,10,11,12},
                 {13,14,15,16}
             };
-            ReverseMatrix_bad(matrix2);
             PrintMatrix(matrix2);
-            //PrintMatrix(ReverseMatrix(matrix2));
-
             Console.ReadLine();
+            PrintMatrix(ReverseMatrix(matrix2));
+            Console.ReadLine();
+
+            var matrixRandom = CreateSqaureMatrix(5);
+            PrintMatrix(matrixRandom);
+            Console.ReadLine();
+            PrintMatrix(ReverseMatrix(matrixRandom));
+            Console.ReadLine();
+
 
         }
         static int[,] ReverseMatrix(int[,] inputMatrix)
         {
             var outputMatrix = new int[inputMatrix.GetLength(0), inputMatrix.GetLength(1)];
-            var x = 0;
-            for (int i = inputMatrix.GetLength(0) - 1; i >= 0; i--)
+            
+            for (int i = inputMatrix.GetLength(0) - 1, x = 0; i >= 0; i--, x++)
             {
-                var y = 0;
-                for (int j = inputMatrix.GetLength(1) - 1; j >= 0; j--)
+                for (int j = inputMatrix.GetLength(1) - 1, y = 0; j >= 0; j--, y++)
                 {
                     outputMatrix[x, y] = inputMatrix[i, j];
-                    y++;
                 }
-                x++;
             }
             return outputMatrix;
         }
@@ -66,7 +69,14 @@ namespace Reverse3by3Matrix
             }
         }
 
-        public int[,] CreateSqaureMatrix(int numOfRows, int maxNumber, int minNumber)
+        /// <summary>
+        /// Creates a Square Matrix with Random Numbers inside the given range
+        /// </summary>
+        /// <param name="numOfRows">Number of Rows and Columns</param>
+        /// <param name="maxNumber">Maximum Number to be returned in the Matrix</param>
+        /// <param name="minNumber">Minimum Number to be returned in the Matrix</param>
+        /// <returns>A Square Matrix</returns>
+        static int[,] CreateSqaureMatrix(int numOfRows, int maxNumber = 100, int minNumber = 0)
         {
             var rng = new Random();
             var outputMatrix = new int[numOfRows, numOfRows];
@@ -77,7 +87,7 @@ namespace Reverse3by3Matrix
                     outputMatrix[i, j] = rng.Next(minNumber, maxNumber);
                 }
             }
-                return outputMatrix;
+            return outputMatrix;
         }
 
 
