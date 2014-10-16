@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+
 namespace MatrixTools
 {
-    public class Tools
+    public class Matrix
     {
         static int[,] ReverseMatrix(int[,] inputMatrix)
         {
@@ -23,17 +24,20 @@ namespace MatrixTools
             return outputMatrix;
         }
 
-        static void PrintMatrix(int[,] inputMatrix)
+        static override string ToString<int>(int[,] inputMatrix, int padLeft = 5)
         {
+            var outputString = "";
             for (int row = 0; row < inputMatrix.GetLength(0); row++)
             {
                 for (int col = 0; col < inputMatrix.GetLength(1); col++)
                 {
-                    var outputString = inputMatrix[row, col].ToString();
-                    Console.Write(outputString.PadLeft(5));
+                    outputString += (inputMatrix[row, col].ToString()).PadLeft(5);
+                    //Console.Write(outputString.PadLeft(5));
                 }
-                Console.WriteLine();
+                outputString += Environment.NewLine;
+                //Console.WriteLine();
             }
+            return outputString;
         }
 
         /// <summary>
